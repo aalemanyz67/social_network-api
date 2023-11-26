@@ -12,14 +12,14 @@ const userSchema = new Schema(
         //email validation
 
         email: {
-            trype: String,
+            type: String,
             required: true,
             unique: true,
-            validate: {
+             validate: {
                 validator: function(v) {
-                    return /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(v);
-                }
-            }
+                   return /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(v);
+               }
+             }
         },
 
         friends:[

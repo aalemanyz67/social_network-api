@@ -1,9 +1,9 @@
 const { Schema, model } = require('mongoose');
-const reactionSchema = reaquire('./Reaction');
+const reactionSchema = require('./Reaction');
 
 const thoughtSchema =  new Schema(
     {
-        thoughText: {
+        thoughtText: {
             type: String,
             required: true,
             minlength: 1,
